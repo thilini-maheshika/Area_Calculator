@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".circle"
+    android:background="#BFA24C"
+    android:backgroundTint="#C2CED8">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="231dp"
+        android:layout_height="178dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.028"
+        app:srcCompat="@drawable/_68px_circle___black_simple_svg" />
+
+    <EditText
+        android:id="@+id/radiusId"
+        android:layout_width="284dp"
+        android:layout_height="54dp"
+        android:ems="10"
+        android:hint="Enter Radius"
+        android:inputType="number|numberDecimal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.113" />
+
+    <Button
+        android:id="@+id/circleclick"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="64dp"
+        android:backgroundTint="#124E7E"
+        android:text="Calculate Now!"
+        app:cornerRadius="50px"
+        app:layout_constraintEnd_toEndOf="@+id/radiusId"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/radiusId"
+        app:layout_constraintTop_toBottomOf="@+id/radiusId" />
+
+    <Button
+        android:id="@+id/backcir"
+        android:layout_width="142dp"
+        android:layout_height="52dp"
+        android:backgroundTint="#EAEFF3"
+        android:text="Back"
+        android:textColor="#0B0909"
+        app:cornerRadius="50px"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/circleclick"
+        app:layout_constraintVertical_bias="0.458"
+        app:strokeColor="#124E7E"
+        app:strokeWidth="2px" />
+
+    <TextView
+        android:id="@+id/display1"
+        android:layout_width="59dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="32dp"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/backcir"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.301"
+        app:layout_constraintStart_toStartOf="@+id/circleclick"
+        app:layout_constraintTop_toBottomOf="@+id/circleclick"
+        app:layout_constraintVertical_bias="0.024" />
+
+    <TextView
+        android:id="@+id/measureId"
+        android:layout_width="29dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="24dp"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/backcir"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/display1"
+        app:layout_constraintTop_toBottomOf="@+id/circleclick"
+        app:layout_constraintVertical_bias="0.204" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

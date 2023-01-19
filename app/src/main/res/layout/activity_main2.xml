@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2"
+    android:background="#BFA24C"
+    android:backgroundTint="#C2CED8">
+
+
+    <ImageView
+        android:id="@+id/sqrId"
+        android:layout_width="396dp"
+        android:layout_height="181dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/square___black_simple_svg" />
+
+    <TextView
+        android:id="@+id/length2"
+        android:layout_width="112dp"
+        android:layout_height="34dp"
+        android:text="Length"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/sqrId"
+        app:layout_constraintEnd_toEndOf="@+id/sqrId"
+        app:layout_constraintHorizontal_bias="0.512"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/sqrId"
+        app:layout_constraintVertical_bias="0.265" />
+
+    <EditText
+        android:id="@+id/sqrlength"
+        android:layout_width="269dp"
+        android:layout_height="62dp"
+        android:ems="10"
+        android:hint="Enter Length of Sides"
+        android:inputType="number|numberDecimal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/sqrId"
+        app:layout_constraintHorizontal_bias="0.529"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sqrId"
+        app:layout_constraintVertical_bias="0.106" />
+
+    <Button
+        android:id="@+id/sqrButton"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="296dp"
+        android:backgroundTint="#124E7E"
+        android:text="Calculate Now!"
+        app:cornerRadius="50px"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/sqrlength"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/sqrlength" />
+
+    <Button
+        android:id="@+id/backsqr"
+        android:layout_width="142dp"
+        android:layout_height="52dp"
+        android:backgroundTint="#EAEFF3"
+        android:text="Back"
+        android:textColor="#0B0909"
+        app:cornerRadius="50px"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/sqrButton"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="@+id/sqrButton"
+        app:layout_constraintTop_toBottomOf="@+id/sqrButton"
+        app:layout_constraintVertical_bias="0.463"
+        app:strokeColor="#124E7E"
+        app:strokeWidth="2px" />
+
+    <TextView
+        android:id="@+id/length3"
+        android:layout_width="85dp"
+        android:layout_height="38dp"
+        android:text="Length"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/sqrId"
+        app:layout_constraintEnd_toEndOf="@+id/sqrId"
+        app:layout_constraintHorizontal_bias="0.816"
+        app:layout_constraintStart_toStartOf="@+id/sqrId"
+        app:layout_constraintTop_toTopOf="@+id/sqrId"
+        app:layout_constraintVertical_bias="0.454" />
+
+    <TextView
+        android:id="@+id/display4"
+        android:layout_width="62dp"
+        android:layout_height="37dp"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/backsqr"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.426"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sqrButton"
+        app:layout_constraintVertical_bias="0.513" />
+
+    <TextView
+        android:id="@+id/measure4"
+        android:layout_width="45dp"
+        android:layout_height="37dp"
+        android:layout_marginBottom="28dp"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/backsqr"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/display4"
+        app:layout_constraintTop_toBottomOf="@+id/sqrButton"
+        app:layout_constraintVertical_bias="0.812" />
+</androidx.constraintlayout.widget.ConstraintLayout>

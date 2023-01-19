@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Triangle"
+    android:background="#BFA24C"
+    android:backgroundTint="#C2CED8">
+
+
+    <ImageView
+        android:id="@+id/triangle"
+        android:layout_width="274dp"
+        android:layout_height="181dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.595"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.092"
+        app:srcCompat="@drawable/_024px_simple_triangle_svg" />
+
+    <EditText
+        android:id="@+id/trheight"
+        android:layout_width="0dp"
+        android:layout_height="62dp"
+        android:ems="10"
+        android:hint="Enter Value of Height"
+        android:inputType="number|numberDecimal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/trbase"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/trbase"
+        app:layout_constraintTop_toBottomOf="@+id/trbase"
+        app:layout_constraintVertical_bias="0.07" />
+
+    <TextView
+        android:id="@+id/XId"
+        android:layout_width="81dp"
+        android:layout_height="32dp"
+        android:text="X"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/triangle"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toStartOf="@+id/triangle"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.261" />
+
+    <EditText
+        android:id="@+id/trbase"
+        android:layout_width="269dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="Enter Value of Base"
+        android:inputType="number|numberDecimal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/triangle"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/triangle"
+        app:layout_constraintTop_toBottomOf="@+id/triangle"
+        app:layout_constraintVertical_bias="0.011" />
+
+    <TextView
+        android:id="@+id/YId"
+        android:layout_width="78dp"
+        android:layout_height="37dp"
+        android:text="Y"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/triangle"
+        app:layout_constraintEnd_toEndOf="@+id/triangle"
+        app:layout_constraintHorizontal_bias="0.739"
+        app:layout_constraintStart_toStartOf="@+id/triangle"
+        app:layout_constraintTop_toTopOf="@+id/triangle"
+        app:layout_constraintVertical_bias="0.458" />
+
+    <Button
+        android:id="@+id/triclick"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="240dp"
+        android:backgroundTint="#124E7E"
+        android:text="Calculate Now!"
+        app:cornerRadius="50px"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/trheight"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/trheight" />
+
+    <Button
+        android:id="@+id/back2"
+        android:layout_width="142dp"
+        android:layout_height="52dp"
+        android:backgroundTint="#EAEFF3"
+        android:text="Back"
+        android:textColor="#0B0909"
+        app:cornerRadius="50px"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/triclick"
+        app:layout_constraintHorizontal_bias="0.519"
+        app:layout_constraintStart_toStartOf="@+id/triclick"
+        app:layout_constraintTop_toBottomOf="@+id/triclick"
+        app:layout_constraintVertical_bias="0.506"
+        app:strokeColor="#124E7E"
+        app:strokeWidth="2px" />
+
+    <TextView
+        android:id="@+id/measure2"
+        android:layout_width="42dp"
+        android:layout_height="39dp"
+        android:layout_marginEnd="8dp"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.616"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/triclick"
+        app:layout_constraintVertical_bias="0.145" />
+
+    <TextView
+        android:id="@+id/displaytri"
+        android:layout_width="65dp"
+        android:layout_height="39dp"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/back2"
+        app:layout_constraintEnd_toStartOf="@+id/measure2"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/triclick"
+        app:layout_constraintVertical_bias="0.517" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

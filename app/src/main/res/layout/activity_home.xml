@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Home"
+    android:background="#BFA24C"
+    android:backgroundTint="#C2CED8">
+
+
+    <TextView
+        android:id="@+id/homeView"
+        android:layout_width="253dp"
+        android:layout_height="54dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Area Calculator"
+        android:textAlignment="center"
+        android:textColor="#063B65"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.06" />
+
+    <Button
+        android:id="@+id/btncircl"
+        android:layout_width="146dp"
+        android:layout_height="152dp"
+        android:backgroundTint="#3F51B5"
+        app:icon="@drawable/_68px_circle___black_simple_svg"
+        app:iconGravity="top"
+        app:iconPadding="5dp"
+        app:iconSize="130dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.595"
+        app:layout_constraintStart_toEndOf="@+id/btnsqr"
+        app:layout_constraintTop_toBottomOf="@+id/btnrect"
+        app:layout_constraintVertical_bias="0.379"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <Button
+        android:id="@+id/btntriangle"
+        android:layout_width="146dp"
+        android:layout_height="152dp"
+        android:backgroundTint="#616D73"
+        android:textAlignment="center"
+        app:icon="@drawable/_024px_simple_triangle_svg"
+        app:iconGravity="top"
+        app:iconPadding="10dp"
+        app:iconSize="130dp"
+        app:iconTint="#2196F3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.132"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.291"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <Button
+        android:id="@+id/btnrect"
+        android:layout_width="146dp"
+        android:layout_height="152dp"
+        android:backgroundTint="#42BC47"
+        android:isScrollContainer="false"
+        app:icon="@drawable/rectangle"
+        app:iconGravity="top"
+        app:iconPadding="30dp"
+        app:iconSize="130dp"
+        app:iconTint="#F4F2F2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.595"
+        app:layout_constraintStart_toEndOf="@+id/btntriangle"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.291"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <Button
+        android:id="@+id/btnsqr"
+        android:layout_width="146dp"
+        android:layout_height="152dp"
+        android:backgroundTint="#E6B214"
+        app:icon="@drawable/square___black_simple_svg"
+        app:iconGravity="top"
+        app:iconPadding="5dp"
+        app:iconSize="130dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.132"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btntriangle"
+        app:layout_constraintVertical_bias="0.38"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

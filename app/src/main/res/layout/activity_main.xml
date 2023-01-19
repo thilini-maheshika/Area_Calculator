@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#BFA24C"
+    android:backgroundTint="#C2CED8"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/rectId"
+        android:layout_width="340dp"
+        android:layout_height="176dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:backgroundTint="#F8F6F6"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/rectangle" />
+
+    <EditText
+        android:id="@+id/edgex"
+        android:layout_width="269dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:hint="Enter Length"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/rectId"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="@+id/rectId"
+        app:layout_constraintTop_toBottomOf="@+id/rectId"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/width1Id"
+        android:layout_width="269dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:hint="Enter Width"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/edgex"
+        app:layout_constraintStart_toStartOf="@+id/edgex"
+        app:layout_constraintTop_toBottomOf="@+id/rectId"
+        app:layout_constraintVertical_bias="0.191" />
+
+    <Button
+        android:id="@+id/rectclick"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="#124E7E"
+        android:text="Calculate Now!"
+        app:cornerRadius="50px"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/width1Id"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/width1Id"
+        app:layout_constraintTop_toBottomOf="@+id/width1Id"
+        app:layout_constraintVertical_bias="0.103" />
+
+    <Button
+        android:id="@+id/back2"
+        android:layout_width="142dp"
+        android:layout_height="52dp"
+        android:layout_marginBottom="44dp"
+        android:backgroundTint="#EAEFF3"
+        android:text="Back"
+        android:textColor="#0B0909"
+        app:cornerRadius="50px"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/rectclick"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="@+id/rectclick"
+        app:layout_constraintTop_toBottomOf="@+id/rectclick"
+        app:layout_constraintVertical_bias="0.647"
+        app:strokeColor="#124E7E"
+        app:strokeWidth="2px" />
+
+    <TextView
+        android:id="@+id/length2"
+        android:layout_width="112dp"
+        android:layout_height="34dp"
+        android:text="Width"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/rectId"
+        app:layout_constraintEnd_toEndOf="@+id/rectId"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="@+id/rectId"
+        app:layout_constraintTop_toTopOf="@+id/rectId"
+        app:layout_constraintVertical_bias="0.333" />
+
+    <TextView
+        android:id="@+id/length3"
+        android:layout_width="85dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="248dp"
+        android:text="Length"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/rectId"
+        app:layout_constraintStart_toStartOf="@+id/rectId"
+        app:layout_constraintTop_toTopOf="@+id/rectId" />
+
+    <TextView
+        android:id="@+id/display3"
+        android:layout_width="58dp"
+        android:layout_height="42dp"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/back2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.422"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rectclick"
+        app:layout_constraintVertical_bias="0.485"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/measure3"
+        android:layout_width="50dp"
+        android:layout_height="42dp"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/back2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/display3"
+        app:layout_constraintTop_toBottomOf="@+id/rectclick"
+        app:layout_constraintVertical_bias="0.485" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
